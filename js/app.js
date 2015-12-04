@@ -1,0 +1,1 @@
+var toDoChallenge = angular.module('ToDo', ['ngResource']);
