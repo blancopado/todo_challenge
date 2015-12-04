@@ -1,0 +1,23 @@
+{
+  "name": "todo_challenge",
+  "homepage": "https://github.com/blancopado/todo_challenge",
+  "authors": [
+    "blancopado <pablo.dominguezblanco@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "angular": "~1.4.8",
+    "angular-resource": "~1.4.8"
+  }
+}
