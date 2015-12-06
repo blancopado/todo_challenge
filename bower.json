@@ -1,13 +1,13 @@
 {
   "name": "todo_challenge",
-  "homepage": "https://github.com/blancopado/todo_challenge",
+  "description": "* Deadline: submit completed pull request by 9am on Monday * You may use whatever level of JavaScript you feel comfortable with - pure JS, jQuery, Angular, or whatever weird and wonderful framework you want to try. Extra points for DogeScript",
+  "main": "index.js",
   "authors": [
     "blancopado <pablo.dominguezblanco@gmail.com>"
   ],
-  "description": "",
-  "main": "",
+  "license": "ISC",
+  "homepage": "https://github.com/blancopado/todo_challenge",
   "moduleType": [],
-  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -16,12 +16,15 @@
     "tests"
   ],
   "dependencies": {
+    "jquery": "~2.1.4",
     "bootstrap": "~3.3.6",
     "angular": "~1.4.8",
-    "angular-resource": "~1.4.8"
+    "angular-resource": "~1.4.8",
+    "angular-local-storage": "~0.2.3"
   },
   "devDependencies": {
     "angular-mocks": "~1.4.8",
-    "angular-route": "~1.4.8"
+    "angular-route": "~1.4.8",
+    "angular-local-storage": "~0.2.3"
   }
 }

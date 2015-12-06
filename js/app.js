@@ -1,1 +1,1 @@
-var toDoChallenge = angular.module('ToDo', ['ngResource']);
+var toDoChallenge = angular.module('ToDoList', ['LocalStorageModule']);
