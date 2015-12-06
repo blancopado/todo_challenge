@@ -1,34 +1,30 @@
 describe('To do challenge', function() {
   
-  var agenda = [];
+  beforeEach( function(){
+    browser.get('http://localhost:8080');
+  });
 
   it('has a title', function() {
-    browser.get('http://localhost:8080');
-
     expect(browser.getTitle()).toEqual('ToDo list');
   });
 
   it('has an input field to add an activity', function() {
-    browser.get('http://localhost:8080');
-
-    element(by.model('newActivity.description')).sendKeys('cleaning');
+    element(by.model('newActivity.description')).sendKeys('test1');
     element(by.className("btn1")).click();
-    expect(element(by.repeater('actv in agenda')).getText()).toContain('cleaning');
+    expect(element(by.repeater('actv in agenda')).getText()).toContain('test1');
   });
 
   it('has an input field to add a second activity', function() {
-    browser.get('http://localhost:8080');
-
     element(by.model('newActivity.description')).sendKeys('test2');
     element(by.className("btn1")).click();
     expect(element(by.repeater('actv in agenda').row(1)).getText()).toContain('test2');
   });
 
-  it('has an input field to add the date', function() {
-    browser.get('http://localhost:8080');
-
-    element(by.model('newActivity.date')).sendKeys('01-30-2015');
+  it('can delete all items from the list', function() {
+    element(by.className("btn2")).click(); //delete previous tests
+    element(by.model('newActivity.description')).sendKeys('test3');
     element(by.className("btn1")).click();
-    expect(element(by.repeater('actv in agenda')).getText()).toContain('01-30-2015');
+    expect(element(by.repeater('actv in agenda')).getText()).toContain('test3');
   });
+
 });

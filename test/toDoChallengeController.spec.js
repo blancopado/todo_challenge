@@ -4,11 +4,12 @@ describe('toDoChallengeController', function() {
 
   var ctrl, scope;
 
-  beforeEach(inject(function($rootScope, $controller) {
+  beforeEach(inject(function($controller, $rootScope) {
     scope = $rootScope.$new();
     ctrl = $controller('ToDo', {
     	$scope: scope
     });
+  }));
 
   // beforeEach(inject(function($controller) {
   //   ctrl = $controller('ToDo');

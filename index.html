@@ -23,21 +23,21 @@
 
 		<div class="container-fluid">
 		<h3> Things to do </h3>
-			<button class="btn btn-danger" ng-click="clearAgenda()">Clear list</button>
+			<button class="btn2 btn-danger" ng-click="clearAgenda()">Clear list</button>
 			<ul class="list-group">
         <li class="list-group-item" ng-repeat="actv in agenda">
           {{ $index + 1 }} - {{ actv.description | limitTo: 50 }} - {{ actv.date | date: 'short' }}
-          <button class="btn2 btn-warning" ng-click="removeAct($index)">X</button>
+          <button class="btn3 btn-warning" ng-click="removeAct($index)">X</button>
         </li>
       </ul>
     </div>
     <div class="container-fluid">
 		<h3> Things done </h3>
-			<button class="btn3 btn-danger" ng-click="clearListDone()">Clear list</button>
+			<button class="btn4 btn-danger" ng-click="clearListDone()">Clear list</button>
 			<ul class="list-group">
         <li class="list-group-item" ng-repeat="actvDone in listDone">
           {{ $index + 1 }} - {{ actvDone.description | limitTo: 50 }} - {{ actvDone.date | date: 'short' }}
-        <button class="btn4 btn-warning" ng-click="removeActDone($index)">X</button>
+        <button class="btn5 btn-warning" ng-click="removeActDone($index)">X</button>
         </li>
       </ul>
     </div>
