@@ -7,7 +7,7 @@ describe('toDoChallengeController', function() {
   beforeEach(inject(function($controller, $rootScope) {
     scope = $rootScope.$new();
     ctrl = $controller('ToDo', {
-    	$scope: scope
+      $scope: scope
     });
     scope.clearAgenda();
     scope.clearListDone();
@@ -15,14 +15,14 @@ describe('toDoChallengeController', function() {
 
   it('initialises with an empty list', function() {
     expect(scope.agenda.length).toBe(0);
-	});  
+  });  
 
-	it('add activity to the list', function() {
-		scope.newActivity = 'Test';
-		scope.addToAgenda();
-		expect(scope.agenda.length).toBe(1);
+  it('add activity to the list', function() {
+    scope.newActivity = 'Test';
+    scope.addToAgenda();
+    expect(scope.agenda.length).toBe(1);
     expect(scope.agenda[0]).toBe('Test');
-	});
+  });
 
   it('deletes all items', function() {
     scope.newActivity = 'Test';
