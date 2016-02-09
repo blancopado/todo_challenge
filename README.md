@@ -1,3 +1,27 @@
+## To Do Angular App
+
+###### I have developed a ToDo App using HTML, JavaScript, AngularJS, CSS3 & Bootstrap.
+
+
+![Alt text](./screenshots/mobile_phone_screenshot.png)
+
+
+##Instructions:
+
+Make sure you have node and bower installed:
+
+node -v
+bower -v
+
+- Clone the repo in your computer.
+- 'Cd' in the app directory.
+- Run 'bower install' & 'npm install'.
+- Start a server: 'http-server'.
+
+
+
+
+
 # Todo Challenge
 
 * Deadline: submit completed pull request by 9am on Monday
